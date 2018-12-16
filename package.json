@@ -1,0 +1,27 @@
+{
+  "name": "ncd-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "ts-node --project tsconfig.json ./src/index.ts",
+    "build": "tsc",
+    "test": "mocha -r ts-node/register test/*.ts",
+    "lint": "tslint -c tslint.json './src/**/*.ts'"
+  },
+  "author": "tira",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "tsyringe": "^2.2.0"
+  }
+}
